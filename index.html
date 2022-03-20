@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Timed-quiz</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -30,10 +30,15 @@
       </div>
 
           
-              <div id="question-container">
-                  <h2 id="questions">
-                      </h2>
-            <div id="queation-opt">
+              <div class="container">
+                  <div id="question-container" class="hide">
+                      <div id="question">Question</div>
+            <div id="question-opt" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+          </div>
           </div>
           </div>
           <div class="scores">
@@ -45,7 +50,10 @@
                 </form>
               </h3>
             </div> 
+            
 </body>
-<footer></footer>
+<footer>
+    <script src="./assets/js/quiz.js"></script>
+</footer>
 
 </html>
