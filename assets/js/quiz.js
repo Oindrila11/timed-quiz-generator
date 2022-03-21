@@ -4,7 +4,7 @@ var questionContainerElement = document.querySelector('#container');
 var answerElement = document.querySelector("#question-opt");
 var homeElement = document. querySelector(".home");
 
-var endElement = document.querySelector(".scores");
+var endElement = document.querySelector("#scores");
 
 var currentIndex = 0;
 var score=0;
@@ -42,6 +42,7 @@ startButtonElement.addEventListener("click", startQuiz);
 
 function startQuiz() {
  homeElement.style.display = "none";
+ endElement.style.display = "none";
  showQuestion(0);
  var countDownTimer = setInterval(function() {
      if(totalTime <= 0 || currentIndex === 5){
@@ -57,6 +58,7 @@ function startQuiz() {
  };
 
  function showQuestion(index) {
+    endElement.style.display = "none";
      if(totalTime > 0){
         document.querySelector("#question").textContent = questions[index].question
          answerElement.innerHTML = "";
@@ -75,8 +77,8 @@ function startQuiz() {
      };
  
 function showAnswer() {
-    if(event.target.value != questions[currentIndex].correctChoice) {
-        window.alert("Incorrect answer, 10 seconds deducted");
+    if( event.target.value != questions[currentIndex].correctChoice) {
+        window.alert("Incorrect! 10 seconds deducted");
         totalTime = totalTime - 10;
     } else {
         window.alert("Correct!")
@@ -97,12 +99,11 @@ function endQuiz() {
     questionContainerElement.innerHTML = "";
     endElement.style.display = "inherit";
     document.getElementById("finalScore").textContent = score;
-    // validate info entered in input
-    // save score + input from user to localStorage
+    
 };
 
 function viewHighScore() {
-    //load localStorage
+
 };
 
  

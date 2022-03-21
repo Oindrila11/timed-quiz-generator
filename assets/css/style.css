@@ -21,6 +21,9 @@ body {
     align-items: center;
 
 }
+body h2{
+    text-align: center;
+}
 .home  {
    text-align:center;
    
@@ -39,19 +42,20 @@ body button{
      text-align:center;
      padding: 60px 60px;
 }
+
 #container {
     
     align-items: center;
 }
-#question-opt {
+#question-opt  {
     display: block;
-    align-items: center;
+    padding-left: 600px;
+    padding-right: 400px;
 }
-
 
     
 
-.scores{
+#scores{
     text-align: center;
      
 }
