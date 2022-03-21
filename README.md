@@ -9,7 +9,10 @@ Also at the end of quiz the initial form is supposed to store the initial of the
 It was a big challenge for me to submit this assignment. i could not have done it without the help of my peers. I would like to mention @xdatalinq who was kind enough to help me out with this assignement.
 
 Checkout how the website works!
- 
+
+## Screenshot
+![](assets/images/Screenshot.png)
+
 
 ## Deplyed link
 [find the deployed link to the website here](https://oindrila11.github.io/timed-quiz-generator/)
