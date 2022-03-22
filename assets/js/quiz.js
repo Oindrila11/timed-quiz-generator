@@ -82,7 +82,7 @@ function showAnswer() {
         totalTime = totalTime - 10;
     } else {
         window.alert("Correct!")
-        totalTime = totalTime + 10;
+        
     }
     currentIndex++;
     if (currentIndex <= 4) {
